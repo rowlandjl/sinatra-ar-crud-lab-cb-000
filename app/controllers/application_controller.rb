@@ -36,6 +36,7 @@ class ApplicationController < Sinatra::Base
     erb :show 
   end 
   
+  # edit 
   get '/articles/:id/edit' do 
     @article = Article.find(params[:id])
     erb :edit 
